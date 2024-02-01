@@ -14,7 +14,7 @@ body {
   font-family: "Poppins", sans-serif;
 
   height: 100vh;
-  background: #1e1e1e;
+  background: #fbfcff;
   font-size: 1.2rem;
   color: #6c7983;
 }
@@ -23,7 +23,7 @@ header {
   padding: 1rem 4rem;
   width: 100%;
   min-height: 10vh;
-  background: #262626;
+  background: #FFFFFF;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid var(--border);
 
@@ -35,13 +35,10 @@ header {
 
 header h1 {
   font-family: "M PLUS Rounded 1c", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
-
-  background: linear-gradient(110.42deg, #cf57a3 29.2%, #27ae60 63.56%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+  /* color letra blanco */
+  color: #007bff;
 }
 
 header .input {
@@ -53,13 +50,32 @@ header .input {
 .input label {
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   cursor: pointer;
-
+  background-color:#3700d4 ;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  color: #FFF;
+}
+
+.container h2{
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #00a7ef;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.container p{
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #00a7ef;
+  text-align: center;
 }
 
 .input label i {

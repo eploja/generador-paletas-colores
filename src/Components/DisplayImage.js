@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
 import ListItem from "./ListItem";
+const gallery = <i className="fas fa-images"></i>;
+
 
 function DisplayImage({ uploadedImage, colorPalette }) {
   const toHex = (rgb) => {
@@ -15,10 +17,15 @@ function DisplayImage({ uploadedImage, colorPalette }) {
   return (
     <div className={styles.content}>
       <div className="image">
+      
         {uploadedImage ? (
           <img src={uploadedImage} alt="uploaded" />
         ) : (
-          <h2>Put An Image Here...</h2>
+          <div className="input">
+            <h2>Arrastra tu imagen aqui...</h2>
+            <label htmlFor="file">{gallery} Subir imagen</label>
+            <input type="file" id="file" hidden onChange="" />
+          </div>
         )}
       </div>
 
